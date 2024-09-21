@@ -21,6 +21,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const auth = getAuth();
-export const db = getFirestore(app);
-export const provider=new GoogleAuthProvider()
+//extra
+export const auth = getAuth();//for auth
+export const db = getFirestore(app);//for database
+export const provider = new GoogleAuthProvider();//kis se krna h login vo leke aao

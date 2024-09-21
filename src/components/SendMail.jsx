@@ -12,7 +12,7 @@ const SendEmail = () => {
         message: ""
     })
   
-  const { open } = useSelector((state) => state.appSlice.open);//we want dynamic change in open value true or false
+  const { open } = useSelector((state) => state.appSlice);//we want dynamic change in open value true or false
     const dispatch = useDispatch();
 
     const changeEventHandler = (e) => {
@@ -21,7 +21,7 @@ const SendEmail = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        await addDoc(collection(db, "emails"), {
+        await addDoc(collection(db, "emails"), {//adding databse collection
             to: formData.recipients,
             subject: formData.subject,
             message: formData.message,
