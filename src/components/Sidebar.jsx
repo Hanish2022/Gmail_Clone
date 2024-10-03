@@ -37,6 +37,7 @@ const sidebarItems = [
     icon: <MdOutlineKeyboardArrowDown size={"24px"} />,
     text: "More",
   },
+  
 ];
 const Sidebar = () => {
     // const [open, setOpen] = useState(false)//this is local state iska var sirf isme hi access hoga but ye sendemail me chahiye iske liye redux use krte vo globala ccess deta
